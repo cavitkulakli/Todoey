@@ -10,6 +10,6 @@ I have implemented local persistance using coredata and realm
 You need to change bundle identifier
 
 ```
-com.yourname.BitcoinTicker
+com.yourname.Todoey
 ```
 Set your team and build
