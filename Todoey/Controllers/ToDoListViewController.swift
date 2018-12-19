@@ -31,9 +31,8 @@ class ToDoListViewController : SwipeTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-        
         
         loadItems()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,9 +48,10 @@ class ToDoListViewController : SwipeTableViewController {
         
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func willMove(toParent parent: UIViewController?) {
         updateNavBar(withHexCode: "259FB9")
     }
+    
     
     //MARK: - Nav Bar Setup Methods
     func updateNavBar(withHexCode colourHexCode: String){
