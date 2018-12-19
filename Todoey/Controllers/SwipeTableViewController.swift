@@ -17,6 +17,7 @@ class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegat
         super.viewDidLoad()
         
         tableView.rowHeight = 80.0
+        tableView.separatorStyle = .none
         
     }
     
@@ -57,4 +58,5 @@ class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegat
         //update our data model
         print("Item deleted from superclass")
     }
+
 }
