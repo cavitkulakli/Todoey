@@ -109,6 +109,11 @@ class CategoryViewController: SwipeTableViewController {
         
         let alert = UIAlertController(title: "Add New Todoey Category", message: "", preferredStyle: .alert)
         
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {
+            (alertAction: UIAlertAction!) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
         let action = UIAlertAction(title: "Add Category", style: .default) { (action) in
             //What will happen once the user clicks the Add Item button on our UIAlert
             
